@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+
+group = 'com.squidpony'
+version = '2.2.1'
+
+description = """SquidLib"""
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+configurations.all {
+}
+
+repositories {
+        
+     maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.3.1'
+}
